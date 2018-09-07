@@ -66,8 +66,8 @@ window.onload = function() {
     }
 
     window.addEventListener('scroll', () => {
-        if (window.innerWidth <= 992) {
-            userBets.style.marginTop = 0;
+        if (window.innerWidth <= 768) {
+            userBets.style.marginTop = '1.5rem';
             return;
         }
 

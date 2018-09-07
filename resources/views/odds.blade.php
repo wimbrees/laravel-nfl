@@ -21,7 +21,7 @@
                     </select>
                 </div>
             </div>
-            @for ($i = 0; $i < 14; $i++)
+            @for ($i = 0; $i < 15; $i++)
                 <div class="form-row">
                     <div class="form-group col-md-2">
                         <label>Away</label>
