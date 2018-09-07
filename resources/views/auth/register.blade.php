@@ -12,10 +12,10 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+                            <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+                                <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
 
                                 @if ($errors->has('username'))
                                     <span class="invalid-feedback" role="alert">
@@ -48,10 +48,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('League') }}</label>
+                            <label for="league" class="col-md-4 col-form-label text-md-right">{{ __('League') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('league') ? ' is-invalid' : '' }}" name="league" value="{{ old('league') }}" required autofocus>
+                                <input id="league" type="text" class="form-control{{ $errors->has('league') ? ' is-invalid' : '' }}" name="league" value="{{ old('league') }}" required autofocus>
 
                                 @if ($errors->has('league'))
                                     <span class="invalid-feedback" role="alert">
