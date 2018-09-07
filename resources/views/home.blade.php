@@ -8,7 +8,7 @@
                 <div v-for="(game, index) in games" class="card game" :class="{ 'mt-2': index !== 0 }">
                     <div class="card-header align-items-center text-center d-flex justify-content-center bg-white">
                         <div class="text-center">
-                            <img :src="`/images/${game.away.name.toLowercase()}.gif`">
+                            <img :src="`/images/${game.away.name.toLowerCase()}.gif`">
                         </div>
                         <h1 class="ml-4 mr-4">@{{ _.capitalize(game.away.name) }} @ @{{ _.capitalize(game.home.name) }}</h1>
                         <div class="text-center">
