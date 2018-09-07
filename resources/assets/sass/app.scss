@@ -1,0 +1,98 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+//
+
+.container {
+    max-width: 100%;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn:not(:disabled):not(.disabled).c-default {
+    cursor: default;
+}
+
+%hovered-or-added {
+    box-shadow: $btn-active-box-shadow,
+        0 0 0 $btn-focus-width rgba($success, 0.5);
+    background: #fff;
+    color: $success;
+}
+
+.btn-outline-success {
+    &:hover,
+    &:not(:disabled):not(.disabled):active {
+        @extend %hovered-or-added;
+    }
+}
+
+.btn-outline-success.added {
+    @extend %hovered-or-added;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.odds {
+    > div {
+        width: calc(100% / 3);
+    }
+    .money-line {
+        button {
+            width: 7.5rem;
+        }
+    }
+    .spread {
+        button {
+            width: 9.375rem;
+        }
+    }
+    .over-under {
+        button {
+            width: 7.5rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+// @include media-breakpoint-down(sm) {
+//     // .odds {
+//     //     flex-direction: column;
+//     //     > div {
+//     //         width: 100%;
+//     //     }
+//     // }
+//     .game {
+//         img {
+//             max-width: 100px;
+//         }
+//     }
+// }
