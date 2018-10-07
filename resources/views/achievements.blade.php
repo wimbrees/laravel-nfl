@@ -19,6 +19,7 @@
                 <option value="pana">Pana</option>
                 <option value="underdog">Underdog</option>
                 <option value="elefantes">Elefantes</option>
+                <option value="fan">Fan</option>
             </select>
         </div>
         <div class="form-group">

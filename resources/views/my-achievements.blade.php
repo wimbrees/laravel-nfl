@@ -37,6 +37,13 @@
                 <p class="card-text">Encerta una aposta a Over en un partit en què s'anotin 60 o més punts</p>
             </div>
         </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="images/fan.jpg" alt="Fan">
+            <div class="card-body {{ $achievements->fan ? 'btn-success' : 'btn-danger' }}">
+                <h5 class="card-title">Fan</h5>
+                <p class="card-text">Encerta durant tres setmanes consecutives (byes no inclosos) una aposta a hàndicap del teu equip preferit</p>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
