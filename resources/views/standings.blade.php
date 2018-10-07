@@ -15,7 +15,7 @@
                 <th scope="col" class="text-center d-none d-md-table-cell">SL</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">TW</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">TL</th>
-                <th scope="col" class="text-center">Achievements<br>(+5 u)</th>
+                <th scope="col" class="text-center">Achievements</th>
                 <th scope="col" class="text-center">Fan</th>
             </tr>
         </thead>
