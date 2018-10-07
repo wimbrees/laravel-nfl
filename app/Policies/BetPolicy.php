@@ -27,6 +27,6 @@ class BetPolicy {
 
         $betWeek = Game::find($bet->odds_id)->week_id;
 
-        return $bet->user_id == $user->id && $betWeek == $currentWeek->week;
+        return $bet->user_id == $user->id && $betWeek == $currentWeek->id;
     }
 }
