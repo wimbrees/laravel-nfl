@@ -35,7 +35,7 @@ class AuthServiceProvider extends ServiceProvider {
                 return intval($prev) + intval($curr);
             });
 
-            $weekIsPlaying = Week::current()->first()->isPlaying();
+            $weekIsPlaying = Week::current()->isPlaying();
 
             return $userAvailableUnits >= $totalUnits && !$weekIsPlaying;
         });
