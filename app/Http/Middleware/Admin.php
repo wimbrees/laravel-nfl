@@ -13,7 +13,7 @@ class Admin {
      * @return mixed
      */
     public function handle($request, Closure $next) {
-        if (!auth()->check() || auth()->user()->username !== 'favre') {
+        if (!auth()->check() || auth()->user()->username !== 'david') {
             return redirect('home');
         }
 
