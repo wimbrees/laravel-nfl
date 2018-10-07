@@ -12,7 +12,7 @@ class AddFanToUserStats extends Migration {
      */
     public function up() {
         Schema::table('user_stats', function (Blueprint $table) {
-            $table->integer('fan')->default(0);
+            $table->integer('fan')->default(0)->after('achievements')->change();
         });
     }
 
