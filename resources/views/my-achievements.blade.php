@@ -20,7 +20,7 @@
             <img class="card-img-top" src="images/pana.jpg" alt="Pana">
             <div class="card-body {{ $achievements->pana ? 'btn-success' : 'btn-danger' }}">
                 <h5 class="card-title">Pana</h5>
-                <p class="card-text">Aposta per un favorit a hàndicap i que la diferència final a favor del favorit estigui 14 punts o més per sobre de la línia marcada</p>
+                <p class="card-text">Aposta per un favorit a handicap i que la diferència final a favor del favorit estigui 14 punts o més per sobre de la línia marcada</p>
             </div>
         </div>
         <div class="card mb-3" style="width: 18rem;">
@@ -41,7 +41,7 @@
             <img class="card-img-top" src="images/fan.jpg" alt="Fan">
             <div class="card-body {{ $achievements->fan ? 'btn-success' : 'btn-danger' }}">
                 <h5 class="card-title">Fan</h5>
-                <p class="card-text">Encerta durant tres setmanes consecutives (byes no inclosos) si el teu equip guanyarà o perdrà el hàndicap</p>
+                <p class="card-text">Encerta durant tres setmanes consecutives (byes no inclosos) si el teu equip guanyarà o perdrà el handicap</p>
             </div>
         </div>
     </div>
