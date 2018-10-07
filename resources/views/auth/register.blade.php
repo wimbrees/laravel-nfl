@@ -65,9 +65,9 @@
                             <label for="favorite_team" class="col-md-4 col-form-label text-md-right">{{ __('Favorite Team') }}</label>
 
                             <div class="col-md-6">
-                                <select class="form-control" name="favorite_team" value="{{ old('favorite_team') }}" required>
+                                <select class="form-control" name="favorite_team" required>
                                     @foreach ($teams as $team)
-                                        <option value="{{ $team->name }}">{{ $team->name }}</option>
+                                        <option @if ($team->name == old('favorite_team')) selected="selected" @endif value="{{ $team->name }}">{{ $team->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
