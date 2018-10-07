@@ -77,6 +77,10 @@ img {
     }
 }
 
+.my-achievements {
+    max-width: 70rem;
+}
+
 @include media-breakpoint-up(xl) {
     .container {
         max-width: 1300px;
