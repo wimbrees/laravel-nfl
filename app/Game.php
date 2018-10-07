@@ -40,7 +40,7 @@ class Game extends Model {
     }
 
     public function scopeCurrentWeek($query) {
-        $currentWeek = optional(Week::current())->week;
+        $currentWeek = optional(Week::current())->id;
 
         return $query->where('week_id', $currentWeek);
     }
