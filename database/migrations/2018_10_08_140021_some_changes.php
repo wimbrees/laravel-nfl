@@ -12,7 +12,19 @@ class AddFanToUserStats extends Migration {
      */
     public function up() {
         Schema::table('user_stats', function (Blueprint $table) {
-            $table->integer('fan')->default(0)->after('achievements')->change();
+            $table->dropColumn('fan');
+        });
+
+        Schema::table('user_stats', function (Blueprint $table) {
+            $table->integer('fan')->default(0)->after('achievements');
+        });
+
+        Schema::table('achievements', function (Blueprint $table) {
+            $table->dropColumn('fan');
+        });
+
+        Schema::table('achievements', function (Blueprint $table) {
+            $table->boolean('fan')->after('elefantes')->default(false);
         });
     }
 
