@@ -19,6 +19,7 @@ class CreateAchievementsTable extends Migration {
             $table->boolean('pana')->default(false);
             $table->boolean('underdog')->default(false);
             $table->boolean('elefantes')->default(false);
+            $table->boolean('fan')->default(false);
             $table->timestamps();
 
             $table->foreign('user_id')

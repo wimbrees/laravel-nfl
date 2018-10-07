@@ -24,6 +24,7 @@ class CreateUserStatsTable extends Migration {
             $table->integer('over_under_won')->default(0);
             $table->integer('over_under_lost')->default(0);
             $table->integer('achievements')->default(0);
+            $table->integer('fan')->default(0);
             $table->timestamps();
 
             $table->foreign('user_id')

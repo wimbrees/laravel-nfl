@@ -16,6 +16,7 @@
                 <th scope="col" class="text-center d-none d-md-table-cell">TW</th>
                 <th scope="col" class="text-center d-none d-md-table-cell">TL</th>
                 <th scope="col" class="text-center">Achievements</th>
+                <th scope="col" class="text-center">Fan</th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,7 @@
                 <td class="text-center d-none d-md-table-cell">{{ $userStats['over_under_won'] }}</td>
                 <td class="text-center d-none d-md-table-cell">{{ $userStats['over_under_lost'] }}</td>
                 <td class="text-center">{{ $userStats['achievements'] }}</td>
+                <td class="text-center">{{ $userStats['fan'] }}</td>
             </tr>
             @endforeach
         </tbody>
