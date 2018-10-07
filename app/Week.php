@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Week extends Model {
-    protected $fillable = ['week', 'starts'];
+    protected $fillable = ['week', 'starts', 'id'];
 
     public static function current() {
         return Week::where('starts', '>', \Carbon\Carbon::now()->subDays(5))->first();
