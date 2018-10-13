@@ -9,7 +9,7 @@
                 <li :key="index" v-for="(bet, index) in userBets.newBets" class="d-flex list-group-item align-items-center">
                     <p class="mb-0 grow">{{ bet.description }}&nbsp;&nbsp;&nbsp;<span class="text-muted">({{ bet.teams }})</span>
                     </p>
-                    <input class="form-control w-auto ml-2" v-model="bet.units" type="number" min="1" max="5" step="1">
+                    <input :class="{'border-danger' : ![1,2,3,4,5].includes(+bet.units)}" class="form-control w-auto ml-2" v-model="bet.units" type="number" min="1" max="5" step="1">
                     <button @click="removeNewBet(index)" type="button" class="close ml-3 text-danger" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
