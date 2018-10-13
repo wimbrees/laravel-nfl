@@ -10,7 +10,7 @@
                         <div class="text-center">
                             <img :src="`/images/${game.away.name.toLowerCase()}.gif`">
                         </div>
-                        <h1 class="ml-4 mr-4">@{{ _.capitalize(game.away.name) }} @ @{{ _.capitalize(game.home.name) }}</h1>
+                        <h1 class="ml-4 mr-4 teams-playing">@{{ _.capitalize(game.away.name) }} @ @{{ _.capitalize(game.home.name) }}</h1>
                         <div class="text-center">
                             <img :src="`/images/${game.home.name.toLowerCase()}.gif`">
                         </div>

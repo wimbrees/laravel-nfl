@@ -10538,3 +10538,23 @@ img {
   }
 }
 
+@media (max-width: 575.98px) {
+  .odds.card-body {
+    padding: 0;
+  }
+
+  .odds.card-body > div {
+    width: calc(100% / 3);
+  }
+
+  .odds.card-body > div > button {
+    width: 100%;
+    font-size: 3vw;
+    padding: 0.6rem 0;
+  }
+
+  h1.teams-playing {
+    font-size: 6vw !important;
+  }
+}
+
