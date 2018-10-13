@@ -38,6 +38,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/standings">Standings</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/my-achievements">My Achievements</a>
+                            </li>
                         @endif
                     </ul>
 
@@ -55,7 +58,6 @@
                             <li class="nav-item dropdown">
                                 <user-info :initial-my-info="{{ $myInfo }}"></user-info>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/my-achievements">My Achievements</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
