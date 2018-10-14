@@ -7,6 +7,7 @@
             <div class="card-body {{ $achievements->mourinhista ? 'btn-success' : 'btn-danger' }}">
                 <h5 class="card-title">Mourinhista</h5>
                 <p class="card-text">Guanya una jornada sent el jugador que menys unitats hagi apostat aquella setmana (o un dels que menys)</p>
+                <small>*Mínim d'apostes realitzades = 0</small>
             </div>
         </div>
         <div class="card mb-3" style="width: 18rem;">
@@ -35,6 +36,7 @@
             <div class="card-body {{ $achievements->elefantes ? 'btn-success' : 'btn-danger' }}">
                 <h5 class="card-title">Elefantes</h5>
                 <p class="card-text">Encerta una aposta a Over en un partit en què s'anotin 60 o més punts</p>
+                <small>*La línia d'Over/Under marcada no cal que sigui superior a 60, només el total real del partit</small>
             </div>
         </div>
         <div class="card mb-3" style="width: 18rem;">
