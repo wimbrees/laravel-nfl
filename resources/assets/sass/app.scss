@@ -113,5 +113,6 @@ img {
 @include media-breakpoint-down(md) {
     #weekly-bets {
         margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
 }
