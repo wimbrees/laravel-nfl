@@ -109,3 +109,9 @@ img {
         font-size: 6vw !important;
     }
 }
+
+@include media-breakpoint-down(md) {
+    #weekly-bets {
+        margin-top: 1.5rem !important;
+    }
+}

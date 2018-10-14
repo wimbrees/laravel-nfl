@@ -126,4 +126,8 @@ class BackendController extends Controller {
 
         return response('Achievement updated');
     }
+
+    public function autoscores() {
+        return view('autoscores');
+    }
 }

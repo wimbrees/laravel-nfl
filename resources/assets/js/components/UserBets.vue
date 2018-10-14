@@ -32,22 +32,20 @@
             </ul>
         </div>
 
-        <div class="card" v-if="weekIsPlaying">
-            <div class="card-header">
-                <h3 class="mb-0">Week {{ week }} Bets</h3>
+        <div id="weekly-bets" v-if="weekIsPlaying">
+            <h1 class="mb-3">Week {{ week }} Bets</h1>
+            <div v-for="(userBets, key) in allBets" :key="key" class="card mt-3">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">{{ key }} ({{ unitsPlaced(key)}} played, {{ benefits(key) }})</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li v-for="(bet, index) in userBets" class="d-flex align-items-center list-group-item">
+                        <p :key="index" class="mb-0 grow">{{ bet.description }}&nbsp;&nbsp;&nbsp;<span class="text-muted">({{ bet.teams }})</span>&nbsp;&nbsp;&nbsp;<span class="text-success">({{ bet.units + (bet.units > 1 ? ' units' : ' unit') }})</span>
+                        </p>
+                        <span v-html="betWon(bet.won)"></span>
+                    </li>
+                </ul>
             </div>
-            <ul v-for="(userBets, key) in allBets" :key="key" class="list-group list-group-flush">
-                <li class="list-group-item active">
-                    <h5 class="mb-0">
-                        {{ key }} ({{ unitsPlaced(key)}} played, {{ benefits(key) }})
-                    </h5>
-                </li>
-                <li v-for="(bet, index) in userBets" class="d-flex align-items-center list-group-item">
-                    <p :key="index" class="mb-0 grow">{{ bet.description }}&nbsp;&nbsp;&nbsp;<span class="text-muted">({{ bet.teams }})</span>&nbsp;&nbsp;&nbsp;<span class="text-success">({{ bet.units + (bet.units > 1 ? ' units' : ' unit') }})</span>
-                    </p>
-                    <span v-html="betWon(bet.won)"></span>
-                </li>
-            </ul>
         </div>
     </div>
 </template>

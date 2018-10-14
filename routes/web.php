@@ -29,6 +29,7 @@ Route::middleware('admin')->group(function () {
     Route::post('/scores', 'BackendController@scoresStore');
     Route::get('/achievements', 'BackendController@achievements');
     Route::post('/achievements', 'BackendController@achievementsStore');
+    Route::get('/autoscores', 'BackendController@autoscores');
 });
 
 Route::get('/{any}', function () {
