@@ -71,7 +71,7 @@ class User extends Authenticatable {
             ->bets
             ->flatten()
             ->sortBy('odds_id')
-            ->sortByDesc('units')
+        // ->sortByDesc('units')
             ->groupBy(function ($bet) {
                 return "{$bet->user->username} ({$bet->user->units})";}
             )

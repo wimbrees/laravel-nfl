@@ -7,7 +7,8 @@
             <div class="card-body {{ $achievements->mourinhista ? 'btn-success' : 'btn-danger' }}">
                 <h5 class="card-title">Mourinhista</h5>
                 <p class="card-text">Guanya una jornada sent el jugador que menys unitats hagi apostat aquella setmana (o un dels que menys)</p>
-                <small>*Mínim d'apostes realitzades = 0</small>
+                <small>*Mínim d'apostes realitzades = 0</small><br>
+                <small>**Beneficis mínims = 0</small>
             </div>
         </div>
         <div class="card mb-3" style="width: 18rem;">
