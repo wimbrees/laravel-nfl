@@ -34,7 +34,7 @@
 
         <div id="weekly-bets" v-if="weekIsPlaying">
             <h1 class="mb-3">Week {{ week }} Bets</h1>
-            <div v-for="(userBets, key) in allBets" :key="key" class="card mt-3 mb-3">
+            <div v-for="(userBets, key) in allBets" :key="key" class="card mt-4 mb-3">
                 <div class="card-header bg-primary text-white">
                     <h5 class="mb-0">{{ key }} ({{ unitsPlaced(key)}} played, {{ benefits(key) }})</h5>
                 </div>
