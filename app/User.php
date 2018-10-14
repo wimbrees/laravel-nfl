@@ -76,7 +76,9 @@ class User extends Authenticatable {
                 return "{$bet->user->username} ({$bet->user->units})";}
             )
             ->sortByDesc(function ($group) {
-                return $group[0]->user->units;
+                return collect($group)->reduce(function ($prev, $curr) {
+                    return $prev + $curr->units;
+                }, 0);
             });
     }
 
