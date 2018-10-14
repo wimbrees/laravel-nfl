@@ -7,14 +7,14 @@
                 <th scope="col" class="text-center">#</th>
                 <th scope="col" class="text-center">Username</th>
                 <th scope="col" class="text-center">Units</th>
-                <th scope="col" class="text-center" title="Bets Won">BW</th>
-                <th scope="col" class="text-center" title="Bets Lost">BL</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Money Line Won">MLW</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Money Line Lost">MLL</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Spread Won">SW</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Spread Lost">SL</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Totals Won">TW</th>
-                <th scope="col" class="text-center d-none d-md-table-cell" title="Totals Lost">TL</th>
+                <th scope="col" class="text-center dotted-underline" title="Bets Won">BW</th>
+                <th scope="col" class="text-center dotted-underline" title="Bets Lost">BL</th>
+                <th scope="col" class="text-center dotted-underline d-none d-md-table-cell dotted-underline" title="Money Line Won">MLW</th>
+                <th scope="col" class="text-center dotted-underline d-none d-md-table-cell dotted-underline" title="Money Line Lost">MLL</th>
+                <th scope="col" class="text-center dotted-underline d-none d-md-table-cell dotted-underline" title="Spread Won">SW</th>
+                <th scope="col" class="text-center dotted-underline d-none d-md-table-cell dotted-underline" title="Spread Lost">SL</th>
+                <th scope="col" class="text-center d-none d-md-table-cell dotted-underline" title="Totals Won">TW</th>
+                <th scope="col" class="text-center d-none d-md-table-cell dotted-underline" title="Totals Lost">TL</th>
                 <th scope="col" class="text-center">Achievements</th>
                 <th scope="col" class="text-center">Fan</th>
             </tr>

@@ -81,6 +81,12 @@ img {
     max-width: 70rem;
 }
 
+.dotted-underline {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #ccc;
+}
+
 @include media-breakpoint-up(xl) {
     .container {
         max-width: 1300px;
