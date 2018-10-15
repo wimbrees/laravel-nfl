@@ -15,8 +15,8 @@
                 <th scope="col" class="text-center dotted-underline d-none d-md-table-cell dotted-underline" title="Spread Lost">SL</th>
                 <th scope="col" class="text-center d-none d-md-table-cell dotted-underline" title="Totals Won">TW</th>
                 <th scope="col" class="text-center d-none d-md-table-cell dotted-underline" title="Totals Lost">TL</th>
-                <th scope="col" class="text-center hidden-xs-down">Achievements</th>
-                <th scope="col" class="text-center hidden-sm-up" title="Achievements">A</th>
+                <th scope="col" class="text-center d-none d-sm-table-cell">Achievements</th>
+                <th scope="col" class="text-center d-xs-table-cell d-sm-none" title="Achievements">A</th>
                 <th scope="col" class="text-center">Fan</th>
             </tr>
         </thead>
