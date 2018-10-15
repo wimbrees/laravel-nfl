@@ -136,11 +136,13 @@ export default {
 
         betWon(won) {
             if (won == 1) {
-                return '<span class="text-success" style="color: #38c172!important;">&#10004;</span>';
+                return '<i class="fas fa-thumbs-up text-success"></i>';
+                // return '<span class="text-success" style="color: #38c172!important;">&#10004;</span>';
             }
 
             if (won == 0) {
-                return '<span class="text-danger">&times</span>';
+                return '<i class="fas fa-thumbs-down text-danger"></i>';
+                // return '<span class="text-danger">&times</span>';
             }
 
             return '';
