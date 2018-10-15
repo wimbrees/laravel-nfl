@@ -40,7 +40,7 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li v-for="(bet, index) in userBets" class="d-flex align-items-center list-group-item">
-                        <p :key="index" class="mb-0 grow">{{ bet.description }}&nbsp;&nbsp;&nbsp;<span class="text-muted">({{ bet.teams }})</span>&nbsp;&nbsp;&nbsp;<span class="text-success">({{ bet.units + (bet.units > 1 ? ' units' : ' unit') }})</span>
+                        <p :key="index" class="mb-0 pr-3 grow">{{ bet.description }}&nbsp;&nbsp;&nbsp;<span class="text-muted">({{ bet.teams }})</span>&nbsp;&nbsp;&nbsp;<span class="text-success">({{ bet.units + (bet.units > 1 ? ' units' : ' unit') }})</span>
                         </p>
                         <span v-html="betWon(bet.won)"></span>
                     </li>
