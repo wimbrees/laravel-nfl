@@ -163,6 +163,8 @@ export default {
                 }
             });
 
+            total = total.toFixed(2);
+
             return total >= 0 ? `+${total}` : `${total}`;
         }
     },
