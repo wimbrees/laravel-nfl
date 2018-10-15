@@ -108,6 +108,9 @@ img {
     h1.teams-playing {
         font-size: 6vw !important;
     }
+    #standings-table {
+        font-size: 0.8rem;
+    }
 }
 
 @include media-breakpoint-down(sm) {

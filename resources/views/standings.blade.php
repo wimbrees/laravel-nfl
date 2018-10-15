@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <table class="table table-striped">
+    <table class="table table-striped" id="standings-table">
         <thead class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">#</th>
@@ -35,7 +35,8 @@
                 <td class="text-center d-none d-md-table-cell">{{ $userStats['over_under_won'] }}</td>
                 <td class="text-center d-none d-md-table-cell">{{ $userStats['over_under_lost'] }}</td>
                 <td class="text-center">{{ $userStats['achievements'] }}</td>
-                <td class="text-center">{{ $userStats['fan'] }}</td>
+                {{-- <td class="text-center">{{ $userStats['fan'] }}</td> --}}
+                <td class="text-center">0</td>
             </tr>
             @endforeach
         </tbody>
