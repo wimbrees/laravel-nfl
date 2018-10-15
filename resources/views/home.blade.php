@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
+    <div class="row" id="main-page">
         <games inline-template :initial-games="{{ $games }}" :week-is-playing="{{ json_encode($weekIsPlaying) }}" v-cloak>
             <div class="col-md-8">
                 <div v-for="(game, index) in games" class="card game" :class="{ 'mt-2': index !== 0 }">
