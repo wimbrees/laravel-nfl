@@ -136,7 +136,7 @@ export default {
 
         betWon(won) {
             if (won == 1) {
-                return '<span class="text-success">&#10004;</span>';
+                return '<span class="text-success" style="color: #38c172!important;">&#10004;</span>';
             }
 
             if (won == 0) {
